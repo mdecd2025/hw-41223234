@@ -14,12 +14,14 @@
 <p style="padding-left: 30px;">Exam (40%) - 建立包含操作流程影片、心得以及提供檔案下載的網頁後填回自評表單</p>
 <p style="padding-left: 30px;">Final Report (30%) - 利用網頁內容進行簡報並提交 pdf 格式書面報告, 完成後填回自評表單</p>
 <h2>list</h2>
+<p><span>讀出 list 倉儲資料:</span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import html
 url = "https://mde.tw/list/2b.txt"
 data = open(url).readlines()
 #print(data)
 all_stud = data[1:]
 print("總共有 " + str(len(all_stud)) + "名學員")</pre>
+<p><span>建立 anchor 與 break 標註:</span></p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import html, document
 url = "https://mde.tw/list/2b.txt"
 data = open(url).readlines()
